@@ -87,10 +87,8 @@ h2 {
     font-size: 2.4rem;
     line-height: 2.9rem;
     font-weight: 400;
-}
-.scale-up-center {
-    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    animation: yourLucky 3s;
 }
 #cookie2 {   
     padding: 4.2rem 0 4.2rem;
@@ -139,23 +137,17 @@ button:hover {
     100% {transform: translate(0px, 1px) rotate(-1deg)};
 }
 
-@-webkit-keyframes scale-up-center {
+  @keyframes yourLucky {
     0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+      transform:
+      translateY(150px)
+      scale(0.1);
+
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      transform:
+      translateY(0px)
+      scale(1);
     }
   }
